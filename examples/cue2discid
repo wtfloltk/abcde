@@ -1,4 +1,4 @@
-#!/usr/bin/python
+!/usr/bin/python
 
 """Outputs a long-form cddb discid given a cue file as input"""
 
