@@ -25,7 +25,7 @@ install:
 	$(INSTALL) -m 644 abcde.1 cddb-tool.1 $(DESTDIR)$(mandir)/man1
 
 windows:
-	cp abcde abcde.exe; cp cddb-tool cddb-tool.exe; cp abcde-musicbrainz-tool abcde-musicbrainz-tool.exe; mv -r *.exe dist;
+	cp abcde abcde.exe; cp cddb-tool cddb-tool.exe; cp abcde-musicbrainz-tool abcde-musicbrainz-tool.exe; cp -r *.exe dist;
 
 uninstall:
 
