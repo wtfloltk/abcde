@@ -1,4 +1,4 @@
-abcde_version = abcde-2.9.4-DEV
+abcde_version = abcde-2.9.4-DEV-bren
 INSTALL = /usr/bin/install -c
 
 prefix = /usr/local
@@ -23,6 +23,9 @@ install:
 	$(INSTALL) -m 644 changelog COPYING FAQ README $(DESTDIR)$(docdir)
 	$(INSTALL) -d -m 755 $(DESTDIR)$(mandir)/man1
 	$(INSTALL) -m 644 abcde.1 cddb-tool.1 $(DESTDIR)$(mandir)/man1
+
+windows:
+	cp abcde abcde.exe; cp cddp-tool cddp-tool.exe; cp abcde-musicbrainz-tool abcde-musicbrainz-tool.exe; mv -r *.exe dist;
 
 uninstall:
 
