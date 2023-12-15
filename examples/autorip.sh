@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 # TODO:
 #	Add paranoia.
 #	Fix logger messages.
