@@ -1,4 +1,4 @@
-#!/bin/sh
+!/bin/sh
 # The first version of this script used a very linux-dependent aproach.
 # Modified to use cdparanoia and check for audio files on the CD
 
