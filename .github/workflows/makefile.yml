@@ -26,7 +26,10 @@ jobs:
     - name: Run install
       run: make install
 
+    - name: foldersetupfordist
+      run: mkdir dist; cp -r *.exe dist/
+
     - uses: actions/upload-artifact@master
       with:
         name: exe
-        path: ./*.exe
+        path: dist
